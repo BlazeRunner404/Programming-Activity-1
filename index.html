@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>AngularJS Directives</title>
+   </head>
+   <body>
+      <h1>Programming Activity #1</h1>
+      <div ng-app = "" ng-init = "Anime = [
+        {Name: 'Goku', Gender: 'Male', Classification: 'Saiyan'},
+        {Name: 'Naruto', Gender: 'Male', Classification: 'Ninja'},
+        {Name: 'Midoriya', Gender: 'Male', Classification: 'Hero'},
+        {Name: 'Bakugo', Gender: 'Male', Classification: 'Hero'},
+        {Name: 'Saitama', Gender: 'Male', Classification: 'Hero'},
+        {Name: 'Yuuma', Gender: 'Male', Classification: 'Neighbor'},
+        {Name: 'Osamu', Gender: 'Male', Classification: 'Human'},
+        {Name: 'Rujierd', Gender: 'Male', Classification: 'Superd'},
+        {Name: 'Rudeus', Gender: 'Male', Classification: 'Wizard'},
+        {Name: 'Rimuru', Gender: 'Male', Classification: 'Slime'}
+      ]">
+      <p>Enter your name: <input type = "text" ng-model = "name"></p>
+      <p>Hello! <span ng-bind = "name"></span>! Nice to meet you.</p>
+      <p>Enter your age: <input type = "text" ng-model = "age"></p>
+      <p>You are <span ng-bind = "age"></span> years old.</p>
+      <p>Course: <input type = "text" ng-model = "course"></p>
+      <p>You are currently studying <span ng-bind = "course"></span>. Wow!</p>
+      <p>List of characters with classification:</p>
+         <ol>
+            <li ng-repeat = "Characters in Anime">
+               {{'Name: ' + Characters.Name + ', Gender: ' + Characters.Gender + ', Classification: ' + Characters.Classification}}
+            </li>
+         </ol>
+      </div>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+      </script>
+   </body>
+</html>
