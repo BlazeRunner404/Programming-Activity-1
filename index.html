@@ -1,6 +1,6 @@
 <html>
    <head>
-      <title>AngularJS Directives</title>
+      <title>Anime characters</title>
    </head>
    <body>
       <h1>Programming Activity #1</h1>
@@ -18,10 +18,14 @@
       ]">
       <p>Enter your name: <input type = "text" ng-model = "name"></p>
       <p>Hello! <span ng-bind = "name"></span>! Nice to meet you.</p>
-      <p>Enter your age: <input type = "text" ng-model = "age"></p>
-      <p>You are <span ng-bind = "age"></span> years old.</p>
-      <p>Course: <input type = "text" ng-model = "course"></p>
-      <p>You are currently studying <span ng-bind = "course"></span>. Wow!</p>
+      <p>Enter your address: <input type = "text" ng-model = "address"></p>
+      <p>Your location is <span ng-bind = "address"></span>.</p>
+      <p>Enter your contact number: <input type = "text" ng-model = "contact"></p>
+      <p>You can be contacted using this number <span ng-bind = "contact"></span>.</p>
+      <p>Enter your college: <input type = "text" ng-model = "college"></p>
+      <p>You are currently studying at <span ng-bind = "college"></span>. Wow!</p>
+      <p>Enter your course: <input type = "text" ng-model = "course"></p>
+      <p>You are enrolled in <span ng-bind = "course"></span>. Wow!</p>
       <p>List of characters with classification:</p>
          <ol>
             <li ng-repeat = "Characters in Anime">
